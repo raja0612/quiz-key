@@ -2,7 +2,14 @@ const express = require('express')
 const app = express()
 const key = require('./key.json');
 
-
+app.use(function(req, res, next) {
+    res.header('Access-Control-Allow-Origin', '*');
+    res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
+    next();
+});
+app.get('/', (request, response) => {
+    response.send('QUIZ KEY APP IS DEPLOYED IN HEROKU...!');
+})
 
 app.get('/:id/:answer', (request, response) => {
     let id = request.params.id
