@@ -1,0 +1,19 @@
+{
+    "data": [{
+            "id": 1,
+            "answer": "red"
+        },
+        {
+            "id": 2,
+            "answer": "Honda"
+        },
+        {
+            "id": 3,
+            "answer": "Dog"
+        },
+        {
+            "id": 4,
+            "answer": "LOL"
+        }
+    ]
+}
